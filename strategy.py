@@ -17,14 +17,14 @@ def begin():
 
 
  # Initialising the telegram bot
-    token = '6504540893:AAFGzZHZJz5OhaGJsqQgBRlQHJHb863Y12s' # Optbot
-    receiver = 643179948
+    token = '''Enter telegram token id''' # Optbot
+    receiver = '''Enter telegram receiver id'''
     Bot = telepot.Bot(token)
     response = Bot.getUpdates()
 
     #Alice blue instance 
-    username = '698978'
-    api_key = 'VbncPr8K1mjgDCHTXgIfnU90D1E5q42VLhv04FfCL7FR1ckZTr7AuMIt4hnH5Ou8aDPFtIitOYoFTD9tzF1dVEuyqtipXZIYYEPSggVKaj9FJzOmi2VTF1DX8nez7uT8'
+    username = '''Enter Alice blue username'''
+    api_key = '''Enter APIkey'''
     alice = Aliceblue(user_id=username,api_key=api_key)
     print(alice.get_session_id())
 
