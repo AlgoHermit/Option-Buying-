@@ -1,0 +1,6 @@
+pytz
+pya3
+telepot
+requests
+yfinance
+talib
