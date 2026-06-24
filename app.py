@@ -16,7 +16,7 @@ def keep_alive():
         if thread == True:          
             thread = False
             break
-        r = re.get('https://optbuy.glitch.me') 
+        #r = re.get('https://optbuy.glitch.me') 
         dt_today = datetime.datetime.today()
         dt_India = dt_today.astimezone(pytz.timezone('Asia/Kolkata')) 
         India = (dt_India.strftime('%m/%d/%Y %H:%M'))
@@ -31,7 +31,7 @@ def home():
         user = request.form['nm']
         password = request.form['pwd']
 
-        if user == 'ayham' and password == '1234':
+        if user == '''ABCD''' and password == '1234':
             return redirect(url_for("setup"))
         else:
             return "Invalid credential, <a href='/login'>Try again</a>"
